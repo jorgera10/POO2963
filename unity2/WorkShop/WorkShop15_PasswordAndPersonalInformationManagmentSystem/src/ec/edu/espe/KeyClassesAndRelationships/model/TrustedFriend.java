@@ -3,12 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.KeyClassesAndRelationships;
+package ec.edu.espe.KeyClassesAndRelationships.model;
 
 /**
  *
  * @author Lenovo
  */
-public class SystemAdminUser extends User {
+public class TrustedFriend extends User {
+    private String label;
     
 }

@@ -3,16 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.KeyClassesAndRelationships;
-
-import java.util.Date;
+package ec.edu.espe.main;
 
 /**
  *
  * @author Lenovo
  */
-public class AccountOrNote {
-    private String label;
-    private Date create_date;
-    private Date last_modified_date;
+class DesktopApplicationAccount {
+    
 }

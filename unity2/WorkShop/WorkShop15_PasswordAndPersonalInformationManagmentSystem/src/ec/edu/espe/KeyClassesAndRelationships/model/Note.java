@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.KeyClassesAndRelationships;
+package ec.edu.espe.KeyClassesAndRelationships.model;
 
 /**
  *
  * @author Lenovo
  */
-public class TrustFrienndsGroup {
-    
+public class Note extends AccountOrNote {
+    private String note_text;
 }

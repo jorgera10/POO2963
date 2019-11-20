@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package ec.edu.espe.KeyClassesAndRelationships;
+package ec.edu.espe.KeyClassesAndRelationships.model;
 
 /**
  *
@@ -17,9 +17,9 @@ public class User {
     private boolean is_active;
     
     
-    public String check_password(String password){
-    this.password = password;
-    return password;
+    public boolean check_password(String password){
+    boolean checkedPassword = false;
+    return checkedPassword;
 } 
     public void get_trust_friends_groups(){
         
