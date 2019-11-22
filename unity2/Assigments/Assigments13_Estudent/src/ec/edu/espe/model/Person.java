@@ -39,8 +39,5 @@ public class Person {
     public void setYear(int edad) {
         this.year = edad;
     }
-    
-    
-    
-    
+   
 }
