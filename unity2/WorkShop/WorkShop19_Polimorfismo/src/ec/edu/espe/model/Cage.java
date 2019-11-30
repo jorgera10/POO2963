@@ -12,7 +12,9 @@ class Cage {
 
     @Override
     public String toString() {
-        return "Cage{" + "material=" + material + ", Xposition=" + Xposition + ", Yposition=" + Yposition + '}';
+        String cagge = String.valueOf(material, Xposition, Yposition);
+        cagge += super.toString();
+        return cagge;
     }
 
     public Cage(String material, int Xposition, int Yposition) {

@@ -15,7 +15,10 @@ public class Monkey extends Mamal {
 
     @Override
     public String toString() {
-        return "Monkey{" + "tailSize=" + tailSize + '}';
+        String monkey;
+        monkey = String.valueOf(tailSize) + ",";
+        monkey += super.toString();
+        return monkey;
     }
     
     

@@ -11,7 +11,10 @@ public class Mamal extends Animal{
 
     @Override
     public String toString() {
-        return "Mamal{" + "isBreastFeeding=" + isBreastFeeding + '}';
+        String mammal;
+        mammal = String.valueOf(isBreastFeeding) + ",";
+        mammal += super.toString();
+        return mammal;
     }
 
     
