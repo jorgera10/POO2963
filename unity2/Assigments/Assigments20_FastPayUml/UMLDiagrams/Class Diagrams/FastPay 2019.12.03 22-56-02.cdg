@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="FastPay">
+  <ClassDiagramComponents>
+    <Class name="Administrator" package="ec.edu.espe.FastPay.controller" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="dni" type="int" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="Last_Name" type="String" visibility="private"/>
+        <Field name="user" type="String" visibility="private"/>
+        <Field name="password" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="User_create" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="User_delete" returnType="void" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Article" package="ec.edu.espe.FastPay.controller" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields>
+        <Field name="id_article" type="int" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="id_provider" type="int" visibility="private"/>
+        <Field name="stock" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="insert" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="modify" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="consult" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="delete" returnType="void" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Entry" package="ec.edu.espe.FastPay.controller" visibility="public" xPosition="632.0" yPosition="20.0">
+      <Fields>
+        <Field name="entry" type="ArrayList&lt;Entry&gt;" visibility="package"/>
+        <Field name="enter" type="Scanner" visibility="package"/>
+        <Field name="id_article" type="int" visibility="private"/>
+        <Field name="data" type="String" visibility="private"/>
+        <Field name="reply" type="char" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="enter" returnType="void" visibility="public"/>
+        <Method name="modify" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="delete" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="see" returnType="void" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Provider" package="ec.edu.espe.FastPay.controller" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="id_provider" type="int" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="direction" type="String" visibility="private"/>
+        <Field name="contact" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="enter" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="modify" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="delete" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="see" returnType="void" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Sale" package="ec.edu.espe.FastPay.controller" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields>
+        <Field name="id_sale" type="int" visibility="private"/>
+        <Field name="date" type="String" visibility="private"/>
+        <Field name="quantity" type="int" visibility="private"/>
+        <Field name="price" type="float" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="enter" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="consult" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="delete" returnType="void" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="User" package="ec.edu.espe.FastPay.controller" visibility="public" xPosition="1520.0" yPosition="20.0">
+      <Fields>
+        <Field name="dni" type="int" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="Last_Name" type="String" visibility="private"/>
+        <Field name="direction" type="String" visibility="private"/>
+        <Field name="password" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="user_verification" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="update_data" returnType="void" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Cash" package="ec.edu.espe.FastPay.model" visibility="public" xPosition="1820.0" yPosition="20.0">
+      <Fields>
+        <Field name="cash" type="float" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Check" package="ec.edu.espe.FastPay.model" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="FastPay" package="ec.edu.espe.FastPay.view" visibility="public" xPosition="20.0" yPosition="420.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="Menu" returnType="void" visibility="public" isStatic="true"/>
+      </Methods>
+    </Class>
+    <Class name="Tent" package="ec.edu.espe.interfaz" visibility="public" xPosition="320.0" yPosition="420.0">
+      <Fields>
+        <Field name="checkbox1" type="java.awt.Checkbox" visibility="private"/>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton3" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jComboBox1" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jComboBox2" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jComboBox3" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jComboBox4" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jComboBox5" type="javax.swing.JComboBox&lt;String&gt;" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel10" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel11" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel12" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel13" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel14" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel15" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel17" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel3" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel4" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel5" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel6" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel7" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel8" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel9" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jList1" type="javax.swing.JList&lt;String&gt;" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPasswordField1" type="javax.swing.JPasswordField" visibility="private"/>
+        <Field name="jRadioButton1" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="jRadioButton2" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="jRadioButton3" type="javax.swing.JRadioButton" visibility="private"/>
+        <Field name="jScrollPane1" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jScrollPane2" type="javax.swing.JScrollPane" visibility="private"/>
+        <Field name="jTextField1" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField2" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField3" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField4" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextField5" type="javax.swing.JTextField" visibility="private"/>
+        <Field name="jTextPane1" type="javax.swing.JTextPane" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="login" package="" visibility="public" xPosition="1114.0" yPosition="420.0">
+      <Fields>
+        <Field name="jButton1" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jButton2" type="javax.swing.JButton" visibility="private"/>
+        <Field name="jLabel1" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jLabel2" type="javax.swing.JLabel" visibility="private"/>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+        <Field name="jPasswordField1" type="javax.swing.JPasswordField" visibility="private"/>
+        <Field name="jTextField1" type="javax.swing.JTextField" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="jButton1ActionPerformed" returnType="void" visibility="private">
+          <Argument type="java.awt.event.ActionEvent" name="evt"/>
+        </Method>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="panel_control" package="" visibility="public" xPosition="1878.0" yPosition="442.0">
+      <Fields>
+        <Field name="jPanel1" type="javax.swing.JPanel" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="initComponents" returnType="// &lt;editor-fold defaultstate=&quot;collapsed&quot; desc=&quot;Generated Code&quot;&gt;//GEN-BEGIN:initComponents void" visibility="private"/>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="entry" source="ec.edu.espe.FastPay.controller.Entry" target="ec.edu.espe.FastPay.controller.Entry" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Entry&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
