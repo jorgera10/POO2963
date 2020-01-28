@@ -42,6 +42,7 @@ public class FrmFactura extends javax.swing.JFrame implements Printable  {
         txtNFactura = new javax.swing.JTextField();
         lblCliente = new javax.swing.JLabel();
         txtCliente = new javax.swing.JTextField();
+        jButton1 = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         tblFactura = new javax.swing.JTable();
 
@@ -67,6 +68,13 @@ public class FrmFactura extends javax.swing.JFrame implements Printable  {
         lblCliente.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
         lblCliente.setText("Cliente: ");
 
+        jButton1.setText("Atras");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         tblFactura.setFont(new java.awt.Font("Segoe UI Emoji", 0, 14)); // NOI18N
         tblFactura.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -88,7 +96,6 @@ public class FrmFactura extends javax.swing.JFrame implements Printable  {
             .addGroup(pnlFacturaLayout.createSequentialGroup()
                 .addGap(26, 26, 26)
                 .addGroup(pnlFacturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 582, Short.MAX_VALUE)
                     .addGroup(pnlFacturaLayout.createSequentialGroup()
                         .addGroup(pnlFacturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addComponent(lblCliente)
@@ -97,16 +104,23 @@ public class FrmFactura extends javax.swing.JFrame implements Printable  {
                         .addGroup(pnlFacturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(txtCliente, javax.swing.GroupLayout.DEFAULT_SIZE, 132, Short.MAX_VALUE)
                             .addComponent(txtNFactura))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlFacturaLayout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 540, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(89, 168, Short.MAX_VALUE))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlFacturaLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lblFactura)
-                .addGap(290, 290, 290))
+                .addGroup(pnlFacturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlFacturaLayout.createSequentialGroup()
+                        .addComponent(lblFactura)
+                        .addGap(290, 290, 290))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlFacturaLayout.createSequentialGroup()
+                        .addComponent(jButton1)
+                        .addGap(212, 212, 212))))
         );
         pnlFacturaLayout.setVerticalGroup(
             pnlFacturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(pnlFacturaLayout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlFacturaLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lblFactura)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -117,9 +131,11 @@ public class FrmFactura extends javax.swing.JFrame implements Printable  {
                 .addGroup(pnlFacturaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblCliente)
                     .addComponent(txtCliente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(55, 55, 55)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 166, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(47, 47, 47))
+                .addGap(128, 128, 128)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 114, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(29, 29, 29)
+                .addComponent(jButton1)
+                .addGap(28, 28, 28))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -141,6 +157,13 @@ public class FrmFactura extends javax.swing.JFrame implements Printable  {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        FrmAdministrator atras = new FrmAdministrator();
+        atras.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -176,23 +199,16 @@ public class FrmFactura extends javax.swing.JFrame implements Printable  {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JFrame jFrame1;
-    private javax.swing.JPanel jPanel4;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JLabel lblCliente;
-    private javax.swing.JLabel lblCliente2;
     private javax.swing.JLabel lblFactura;
-    private javax.swing.JLabel lblFactura2;
     private javax.swing.JLabel lblNFactura;
-    private javax.swing.JLabel lblNFactura2;
     private javax.swing.JPanel pnlFactura;
     private javax.swing.JTable tblFactura;
-    private javax.swing.JTable tblFactura2;
     private javax.swing.JTextField txtCliente;
-    private javax.swing.JTextField txtCliente2;
     private javax.swing.JTextField txtNFactura;
-    private javax.swing.JTextField txtNFactura2;
     // End of variables declaration//GEN-END:variables
 
     @Override

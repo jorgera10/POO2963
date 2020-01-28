@@ -27,17 +27,16 @@ public class FrmAdministrator extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jButton2 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        btnCompras = new javax.swing.JButton();
-        btnVentas = new javax.swing.JButton();
-        btnDetalleVenta = new javax.swing.JButton();
         btnProductos = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
         btnProveedores = new javax.swing.JButton();
         btnFactura = new javax.swing.JButton();
         btnUsuarios = new javax.swing.JButton();
-        jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         panel1 = new java.awt.Panel();
         lblRolUsuario = new javax.swing.JLabel();
         lblCerrarSesion = new javax.swing.JLabel();
@@ -49,6 +48,9 @@ public class FrmAdministrator extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(51, 0, 255));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jButton2.setText("SALIR");
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 400, 90, 40));
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/iconos/home/mitad6.jpg"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 130, 520, 320));
@@ -64,18 +66,6 @@ public class FrmAdministrator extends javax.swing.JFrame {
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, -1, 150, 30));
 
-        btnCompras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/iconos/Compras.png"))); // NOI18N
-        btnCompras.setText("Compras");
-        getContentPane().add(btnCompras, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 40, -1, -1));
-
-        btnVentas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/iconos/Ventas.png"))); // NOI18N
-        btnVentas.setText("Ventas");
-        getContentPane().add(btnVentas, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
-
-        btnDetalleVenta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/iconos/Aceptar.png"))); // NOI18N
-        btnDetalleVenta.setText("Detalle Ventas");
-        getContentPane().add(btnDetalleVenta, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
-
         btnProductos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/iconos/Productos.png"))); // NOI18N
         btnProductos.setText("Productos");
         btnProductos.addActionListener(new java.awt.event.ActionListener() {
@@ -83,11 +73,19 @@ public class FrmAdministrator extends javax.swing.JFrame {
                 btnProductosActionPerformed(evt);
             }
         });
-        getContentPane().add(btnProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, -1, -1));
+        getContentPane().add(btnProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, -1, -1));
+
+        jButton3.setText("Menu");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 280, 90, 30));
 
         btnProveedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/iconos/Proveedores.png"))); // NOI18N
         btnProveedores.setText("Proveedores");
-        getContentPane().add(btnProveedores, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 270, -1, -1));
+        getContentPane().add(btnProveedores, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
 
         btnFactura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/iconos/Inventario.png"))); // NOI18N
         btnFactura.setText("Factura");
@@ -96,7 +94,7 @@ public class FrmAdministrator extends javax.swing.JFrame {
                 btnFacturaActionPerformed(evt);
             }
         });
-        getContentPane().add(btnFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, -1, -1));
+        getContentPane().add(btnFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, -1, -1));
 
         btnUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/iconos/login/usuario.png"))); // NOI18N
         btnUsuarios.setText("Usuarios");
@@ -105,16 +103,16 @@ public class FrmAdministrator extends javax.swing.JFrame {
                 btnUsuariosActionPerformed(evt);
             }
         });
-        getContentPane().add(btnUsuarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 390, -1, -1));
+        getContentPane().add(btnUsuarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, -1, -1));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/iconos/home/configb.png"))); // NOI18N
+        jLabel3.setText("User");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 10, -1, -1));
 
         jLabel2.setBackground(new java.awt.Color(0, 0, 204));
         jLabel2.setForeground(new java.awt.Color(51, 51, 255));
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/iconos/home/mitad.jpg"))); // NOI18N
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 190, 450));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/iconos/home/configb.png"))); // NOI18N
-        jLabel3.setText("User");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 10, -1, -1));
 
         lblRolUsuario.setFont(new java.awt.Font("Segoe UI Light", 0, 11)); // NOI18N
         lblRolUsuario.setForeground(new java.awt.Color(102, 0, 0));
@@ -208,6 +206,13 @@ public class FrmAdministrator extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:FrmAdministrator atras = new FrmAdministrator();
+        JFrameMenu menu = new JFrameMenu();
+        menu.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton3ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -244,14 +249,13 @@ public class FrmAdministrator extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnCompras;
-    private javax.swing.JButton btnDetalleVenta;
     private javax.swing.JButton btnFactura;
     private javax.swing.JButton btnProductos;
     private javax.swing.JButton btnProveedores;
     private javax.swing.JButton btnUsuarios;
-    private javax.swing.JButton btnVentas;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

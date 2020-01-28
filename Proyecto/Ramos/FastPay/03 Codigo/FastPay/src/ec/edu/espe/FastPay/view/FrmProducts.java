@@ -147,8 +147,8 @@ public class FrmProducts extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnBackActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBackActionPerformed
-        JFrameMenu back = new JFrameMenu();
-        back.setVisible(true);
+        FrmAdministrator atras = new FrmAdministrator();
+        atras.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_btnBackActionPerformed
 
