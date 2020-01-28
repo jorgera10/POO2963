@@ -57,6 +57,11 @@ public class FrmAdministrator extends javax.swing.JFrame {
         jButton1.setForeground(new java.awt.Color(255, 0, 0));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/iconos/Menu.png"))); // NOI18N
         jButton1.setText("MENU");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, -1, 150, 30));
 
         btnCompras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/iconos/Compras.png"))); // NOI18N
@@ -73,6 +78,11 @@ public class FrmAdministrator extends javax.swing.JFrame {
 
         btnProductos.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/iconos/Productos.png"))); // NOI18N
         btnProductos.setText("Productos");
+        btnProductos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnProductosActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnProductos, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, -1, -1));
 
         btnProveedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/iconos/Proveedores.png"))); // NOI18N
@@ -81,10 +91,20 @@ public class FrmAdministrator extends javax.swing.JFrame {
 
         btnFactura.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/iconos/Inventario.png"))); // NOI18N
         btnFactura.setText("Factura");
+        btnFactura.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFacturaActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnFactura, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 340, -1, -1));
 
         btnUsuarios.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ec/edu/espe/iconos/login/usuario.png"))); // NOI18N
         btnUsuarios.setText("Usuarios");
+        btnUsuarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnUsuariosActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnUsuarios, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 390, -1, -1));
 
         jLabel2.setBackground(new java.awt.Color(0, 0, 204));
@@ -159,6 +179,34 @@ public class FrmAdministrator extends javax.swing.JFrame {
     private void lblAgregarUsuarioMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblAgregarUsuarioMouseClicked
         
     }//GEN-LAST:event_lblAgregarUsuarioMouseClicked
+
+    private void btnFacturaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFacturaActionPerformed
+        // TODO add your handling code here:
+        FrmFactura factura = new FrmFactura();
+        factura.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnFacturaActionPerformed
+
+    private void btnProductosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnProductosActionPerformed
+        // TODO add your handling code here:
+        FrmProducts products = new FrmProducts();
+        products.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnProductosActionPerformed
+
+    private void btnUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUsuariosActionPerformed
+        // TODO add your handling code here:
+        FrmUser user = new FrmUser();
+        user.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnUsuariosActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        JFrameMenu menu = new JFrameMenu();
+        menu.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
